@@ -1,6 +1,8 @@
 # Amazon Retail Datawarehouse    
-This project aims to Extract, Transform and Load data into a DataWarehouse, as well as doing some analysis on it to answer potential business needs.    
+This [DSTI](https://dsti.school/) project aims to Extract, Transform and Load data into a DataWarehouse, as well as doing some analysis on it to answer potential business needs.     
+<br>
 Here is the dataset used: https://www.kaggle.com/datasets/ratnesh10x10/amazon-sales     
+<br>
 Good exploration! And don't hesitate to connect with us :)      
        
 ## Overview     
