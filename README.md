@@ -35,11 +35,8 @@ About the output of this project, we got:
 - connect the raw data to each OLE_SRC bloc of each STA pipelines    
 - run the Amazon_Exec file in Visual Studio (make sure to have the right connection manager set up)
 - check the data in SSMS    
-- analyse data on Power BI    
- 
-Or you can check our dashboards here: https://dstisas.sharepoint.com/:u:/s/DWHETLAmazon/EUcHANeteupDodIFu0_kkfwBc6UIyCbbKKAI91hvW8jZSg?e=zHwRuq    
-    
-    
+- analyse data on Power BI         
+
     
 ## Now, let's enjoy some screenshots retracing our work:    
 
