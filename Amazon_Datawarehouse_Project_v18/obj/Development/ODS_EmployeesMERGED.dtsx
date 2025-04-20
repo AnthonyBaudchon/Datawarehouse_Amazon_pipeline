@@ -1,0 +1,1714 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/13/2025 10:57:20 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DAMIEN"
+  DTS:CreatorName="DAMIEN\damie"
+  DTS:DTSID="{89901837-8BB3-4FD9-A75F-EA8EF5A2ABF5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="ODS_EmployeesMERGED"
+  DTS:PackageType="5"
+  DTS:VersionBuild="82"
+  DTS:VersionGUID="{F507E173-48FA-4F2F-B668-FB7C8702BD37}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - ODS Employees MERGED"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{31BB128D-2E9C-4C05-BFC9-5D8BF48E625B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - ODS Employees MERGED"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="DNCV - Resizing"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[employeeID]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="employeeID"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[lastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="lastName"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[lastName]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[firstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="firstName"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[firstName]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[title]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="title"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[title]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[titleOfCourtesy]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="titleOfCourtesy"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[titleOfCourtesy]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[address]"
+                      cachedDataType="wstr"
+                      cachedLength="110"
+                      cachedName="address"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[address]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[city]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="city"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[city]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[region]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="region"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[region]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[postalCode]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="postalCode"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[postalCode]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[country]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[emailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="110"
+                      cachedName="emailAddress"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[emailAddress]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[homePhone]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="homePhone"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[homePhone]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[extension]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="extension"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[extension]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[reportsTo]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="reportsTo"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[reportsTo]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[territoryList]"
+                      cachedDataType="nText"
+                      cachedName="territoryList"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[territoryList]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input].Columns[regionDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="regionDescription"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[regionDescription]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[employeeID_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[employeeID_R]"
+                      name="employeeID_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[lastName_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[lastName_R]"
+                      name="lastName_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[lastName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[firstName_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[firstName_R]"
+                      name="firstName_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[firstName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[title_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[title_R]"
+                      name="title_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[titleOfCourtesy_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[titleOfCourtesy_R]"
+                      name="titleOfCourtesy_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[titleOfCourtesy]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[address_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[address_R]"
+                      name="address_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[address]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[city_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[city_R]"
+                      name="city_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[city]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[region_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[region_R]"
+                      name="region_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[region]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[postalCode_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[postalCode_R]"
+                      name="postalCode_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[postalCode]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[country_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[country_R]"
+                      name="country_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[emailAddress_R]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[emailAddress_R]"
+                      name="emailAddress_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[emailAddress]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[homePhone_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[homePhone_R]"
+                      name="homePhone_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[homePhone]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[extension_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[extension_R]"
+                      name="extension_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[extension]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[reportsTo_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[reportsTo_R]"
+                      name="reportsTo_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[reportsTo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[territoryList_R]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[territoryList_R]"
+                      name="territoryList_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[territoryList]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[regionDescription_R]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[regionDescription_R]"
+                      name="regionDescription_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[regionDescription]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="LKP - territoryList &amp; regionDescription"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
+    employeeID,
+    STRING_AGG(territoryDescription, ', ') AS territoryList,
+    regionDescription
+FROM dbo.ODS_EmployeeTerritories
+GROUP BY employeeID, regionDescription
+ORDER BY employeeID</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT 
+    employeeID,
+    STRING_AGG(territoryDescription, ', ') AS territoryList,
+    regionDescription
+FROM dbo.ODS_EmployeeTerritories
+GROUP BY employeeID, regionDescription
+ORDER BY employeeID) [refTable]
+where [refTable].[employeeID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="employeeID" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="territoryList" dataType="DT_NTEXT" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="regionDescription" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Connections[OleDbConnection]"
+                  connectionManagerID="{C765C87C-D990-4D89-A438-EAFD98AC9FAE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.AMAZON_ODS]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input].Columns[employeeID]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="employeeID"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">employeeID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[territoryList]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[territoryList]"
+                      name="territoryList"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">territoryList</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[regionDescription]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output].Columns[regionDescription]"
+                      name="regionDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">regionDescription</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE_DST - ODS Employees MERGED"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ODS_EmployeesMERGED]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Connections[OleDbConnection]"
+                  connectionManagerID="{C765C87C-D990-4D89-A438-EAFD98AC9FAE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.AMAZON_ODS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[birthDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="birthDate"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[birthDate]"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[birthDate]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[hireDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="hireDate"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[hireDate]"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[hireDate]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[territoryList_R]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="territoryList_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[territoryList]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[territoryList_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[regionDescription_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="regionDescription_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[regionDescription]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[regionDescription_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[reportsTo_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="reportsTo_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[reportsTo]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[reportsTo_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[extension_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="extension_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[extension]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[extension_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[homePhone_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="homePhone_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[homePhone]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[homePhone_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[emailAddress_R]"
+                      cachedDataType="wstr"
+                      cachedLength="110"
+                      cachedName="emailAddress_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[emailAddress]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[emailAddress_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[country_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[country_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[postalCode_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="postalCode_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[postalCode]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[postalCode_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[region_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="region_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[region_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[city_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[city_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[address_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="110"
+                      cachedName="address_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[address]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[address_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[titleOfCourtesy_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="titleOfCourtesy_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[titleOfCourtesy]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[titleOfCourtesy_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[title_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="title_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[title_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[firstName_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="firstName_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[firstName]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[firstName_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[lastName_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lastName_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[lastName]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[lastName_R]" />
+                    <inputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].Columns[employeeID_R]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="employeeID_R"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[employeeID]"
+                      lineageId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output].Columns[employeeID_R]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[employeeID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="employeeID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[lastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[firstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="firstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[titleOfCourtesy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="titleOfCourtesy" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[birthDate]"
+                      dataType="dbTimeStamp"
+                      name="birthDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[hireDate]"
+                      dataType="dbTimeStamp"
+                      name="hireDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="110"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[postalCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="postalCode" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[emailAddress]"
+                      dataType="wstr"
+                      length="110"
+                      name="emailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[homePhone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="homePhone" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[extension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="extension" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[reportsTo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="reportsTo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[territoryList]"
+                      dataType="wstr"
+                      length="255"
+                      name="territoryList" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input].ExternalColumns[regionDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="regionDescription" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE_SRC - ODS Employees"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ODS_Employees]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT *
+FROM dbo.ODS_Employees
+ORDER BY employeeID</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Connections[OleDbConnection]"
+                  connectionManagerID="{C765C87C-D990-4D89-A438-EAFD98AC9FAE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.AMAZON_ODS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[employeeID]"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[employeeID]"
+                      name="employeeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[lastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[lastName]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[lastName]"
+                      name="lastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[firstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[firstName]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[firstName]"
+                      name="firstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[titleOfCourtesy]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[titleOfCourtesy]"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[titleOfCourtesy]"
+                      name="titleOfCourtesy"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[birthDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[birthDate]"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[birthDate]"
+                      name="birthDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[hireDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[hireDate]"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[hireDate]"
+                      name="hireDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[address]"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[address]"
+                      name="address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[region]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[region]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[region]"
+                      name="region"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[postalCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[postalCode]"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[postalCode]"
+                      name="postalCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[emailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[emailAddress]"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[emailAddress]"
+                      name="emailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[homePhone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[homePhone]"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[homePhone]"
+                      name="homePhone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[extension]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[extension]"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[extension]"
+                      name="extension"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[reportsTo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[reportsTo]"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].Columns[reportsTo]"
+                      name="reportsTo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[employeeID]"
+                      dataType="wstr"
+                      length="10"
+                      name="employeeID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[lastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="lastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[firstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="firstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[titleOfCourtesy]"
+                      dataType="wstr"
+                      length="10"
+                      name="titleOfCourtesy" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[birthDate]"
+                      dataType="dbTimeStamp"
+                      name="birthDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[hireDate]"
+                      dataType="dbTimeStamp"
+                      name="hireDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[address]"
+                      dataType="wstr"
+                      length="110"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[city]"
+                      dataType="wstr"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[region]"
+                      dataType="wstr"
+                      length="50"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[postalCode]"
+                      dataType="wstr"
+                      length="20"
+                      name="postalCode" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[emailAddress]"
+                      dataType="wstr"
+                      length="110"
+                      name="emailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[homePhone]"
+                      dataType="wstr"
+                      length="20"
+                      name="homePhone" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[extension]"
+                      dataType="wstr"
+                      length="10"
+                      name="extension" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output].ExternalColumns[reportsTo]"
+                      dataType="wstr"
+                      length="10"
+                      name="reportsTo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[employeeID]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[employeeID]"
+                      name="employeeID" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[lastName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[lastName]"
+                      name="lastName" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[firstName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[firstName]"
+                      name="firstName" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[title]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[titleOfCourtesy]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[titleOfCourtesy]"
+                      name="titleOfCourtesy" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[birthDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[birthDate]"
+                      name="birthDate" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[hireDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[hireDate]"
+                      name="hireDate" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[address]"
+                      dataType="wstr"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[address]"
+                      name="address" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[city]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[city]"
+                      name="city" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[region]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[region]"
+                      name="region" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[postalCode]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[postalCode]"
+                      name="postalCode" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[country]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[country]"
+                      name="country" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[emailAddress]"
+                      dataType="wstr"
+                      length="110"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[emailAddress]"
+                      name="emailAddress" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[homePhone]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[homePhone]"
+                      name="homePhone" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[extension]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[extension]"
+                      name="extension" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[reportsTo]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[reportsTo]"
+                      name="reportsTo" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - ODS Employees MERGED.Paths[Data Conversion Output]"
+              endId="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - ODS Employees MERGED.Paths[Lookup Match Output]"
+              endId="Package\DFT - ODS Employees MERGED\DNCV - Resizing.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\DFT - ODS Employees MERGED.Paths[OLE DB Source Output]"
+              endId="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - TRUNCATE ODS Employees MERGED"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D58F9BFD-B906-44DB-9645-9C229F3719AD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - TRUNCATE ODS Employees MERGED"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C765C87C-D990-4D89-A438-EAFD98AC9FAE}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE ODS_EmployeesMERGED" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Contrainte]"
+      DTS:CreationName=""
+      DTS:DTSID="{487DC5D6-C44B-4582-A90E-8A63277D3639}"
+      DTS:From="Package\SQL - TRUNCATE ODS Employees MERGED"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Contrainte"
+      DTS:To="Package\DFT - ODS Employees MERGED" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="232.8,41.6"
+          Id="Package\DFT - ODS Employees MERGED"
+          TopLeft="84.9999986340603,192.333333122399" />
+        <NodeLayout
+          Size="292.8,41.6"
+          Id="Package\SQL - TRUNCATE ODS Employees MERGED"
+          TopLeft="61,61.6249999919285" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Contrainte]"
+          TopLeft="204.39999931703,103.224999991929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,89.1083331304708"
+              Start="0,0"
+              End="0,81.6083331304708">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,81.6083331304708" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - ODS Employees MERGED">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees"
+          TopLeft="174.16665715062,121.333332489596" />
+        <NodeLayout
+          Size="252,41.6"
+          Id="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription"
+          TopLeft="153.33332495557,246.999998282393" />
+        <EdgeLayout
+          Id="Package\DFT - ODS Employees MERGED.Paths[OLE DB Source Output]"
+          TopLeft="279.949991053095,162.933332489596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84.0666657927968"
+              Start="0,0"
+              End="0,76.5666657927968">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5666657927968" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="260,41.6"
+          Id="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED"
+          TopLeft="147.499991940956,460.199996799827" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\DFT - ODS Employees MERGED\DNCV - Resizing"
+          TopLeft="200.833322360284,354.46666420175" />
+        <EdgeLayout
+          Id="Package\DFT - ODS Employees MERGED.Paths[Lookup Match Output]"
+          TopLeft="279.283323657927,288.599998282393">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.8666659193569"
+              Start="0,0"
+              End="0,58.3666659193569">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.3666659193569" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,23.3786454596785,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - ODS Employees MERGED.Paths[Data Conversion Output]"
+          TopLeft="278.36665715062,396.06666420175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.1333325980768"
+              Start="0,0"
+              End="0,56.6333325980768">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.6333325980768" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - ODS Employees MERGED\OLE_SRC - ODS Employees">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - ODS Employees MERGED\LKP - territoryList &amp; regionDescription">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - ODS Employees MERGED\OLE_DST - ODS Employees MERGED">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
