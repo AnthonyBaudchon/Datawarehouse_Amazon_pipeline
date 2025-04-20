@@ -1,7 +1,7 @@
 # Amazon Retail Datawarehouse    
 This project aims to Extract, Transform and Load data into a DataWarehouse, as well as doing some analysis on it to answer potential business needs.    
 Here is the dataset used: https://www.kaggle.com/datasets/ratnesh10x10/amazon-sales     
-      
+Good exploration! And don't hesitate to connect with us :)      
        
 ## Overview     
 About the output of this project, we got:    
@@ -40,7 +40,7 @@ Or you can check our dashboards here: https://dstisas.sharepoint.com/:u:/s/DWHET
     
     
     
-## Now, let's enjoy some screenshots retracing our work and don't hesitate to connect with us:    
+## Now, let's enjoy some screenshots retracing our work:    
 
 ![image](https://github.com/user-attachments/assets/798b28c7-658d-4747-acbe-171f251e945f)
 
