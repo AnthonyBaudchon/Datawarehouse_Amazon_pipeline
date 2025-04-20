@@ -23,7 +23,8 @@ About the output of this project, we got:
 - the raw data --> folder Data
 - the pipelines built with SSIS and executed on Visual Studio --> folder Pipelines       
 - the SQL queries to build the databases on SSMS --> folder SQL_queries    
-- the Power BI file with the dashboards we made --> fodler Dashboard    
+- the Power BI file with the dashboards we made --> fodler Dashboard
+- the report of the project --> folder Report
       
     
 ## If you want to reproduce the project, you can:
