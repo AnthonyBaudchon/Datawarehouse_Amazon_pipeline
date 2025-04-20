@@ -28,7 +28,7 @@ About the output of this project, we got:
       
     
 ## If you want to reproduce the project, you can:
-- download the raw data from the link of from the data folder    
+- download the raw data from the link or from the data folder    
 - pull the repository or download it as a zip file
 - open Visual Studio and open the .sln file from the Pipelines folder
 - create the databases with the SQL queries from the SQL_queries folder
