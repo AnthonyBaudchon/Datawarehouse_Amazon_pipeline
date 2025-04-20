@@ -1,25 +1,46 @@
-# Datawarehouse_Amazon_pipeline
-Pipeline of data from an Amazon sales dataset to create a Datawarehouse with Visual Studio and SQL Server
-
-On this project, there is a lot of work that have been done within the team.
-
-I will upadte the github later when I get some time to do it.
-
-
-What is planned to add here (for being able to replicate this project):
-- add to the Github the SQL queries to build the databases on SSMS
-- the pipelines built with SSIS to execute them on Visual Studio (and create the datawarehouse)
-- the powerBI file to have the dashboard we made
-- a file step-by-step on what to do for seeing the magic of this pipeline transforming raw data from a retail dataset to insightful dashboards
-
-
-
-But here are some results from:
-- ETL process with solid pipelines (STA -> ODS -> DWH)
-- SQL Server Databases we used to maintain our DataWarehouse
-- PowerBI dashboards to get insights from the SQL Server Datawarehouse
-
-Let's enjoy some screenshots:
+# Amazon Retail Datawarehouse    
+This project aims to Extract, Transform and Load data into a DataWarehouse, as well as doing some analysis on it to answer potential business needs.    
+Here is the dataset used: https://www.kaggle.com/datasets/ratnesh10x10/amazon-sales     
+      
+       
+## Overview     
+About the output of this project, we got:    
+- a complete ETL process with solid pipelines (STA -> ODS -> DWH) to build the DataWarehouse
+- a Star Schema DataWarehouse for managing the transactional data
+- SQL Server Databases we used to maintain the DataWarehouse    
+- PowerBI dashboards to get insights from the transformed data located in the DataWarehouse
+     
+         
+## We worked as a team of 5 data engineers and data analysts, including:    
+- Giti Shekari    
+- Marie-Caroline Bertheau    
+- Damien Rondet    
+- Nans Long    
+- Anthony Baudchon    
+    
+     
+## On this repository, you can find:    
+- the raw data --> folder Data
+- the pipelines built with SSIS and executed on Visual Studio --> folder Pipelines       
+- the SQL queries to build the databases on SSMS --> folder SQL_queries    
+- the Power BI file with the dashboards we made --> fodler Dashboard    
+      
+    
+## If you want to reproduce the project, you can:
+- download the raw data from the link of from the data folder    
+- pull the repository or download it as a zip file
+- open Visual Studio and open the .sln file from the Pipelines folder
+- create the databases with the SQL queries from the SQL_queries folder
+- connect the raw data to each OLE_SRC bloc of each STA pipelines    
+- run the Amazon_Exec file in Visual Studio (make sure to have the right connection manager set up)
+- check the data in SSMS    
+- analyse data on Power BI    
+ 
+Or you can check our dashboards here: https://dstisas.sharepoint.com/:u:/s/DWHETLAmazon/EUcHANeteupDodIFu0_kkfwBc6UIyCbbKKAI91hvW8jZSg?e=zHwRuq    
+    
+    
+    
+## Now, let's enjoy some screenshots retracing our work and don't hesitate to connect with us:    
 
 ![image](https://github.com/user-attachments/assets/798b28c7-658d-4747-acbe-171f251e945f)
 
