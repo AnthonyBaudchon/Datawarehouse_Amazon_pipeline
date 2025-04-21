@@ -10,7 +10,7 @@ About the output of this project, we got:
 - a complete ETL process with solid pipelines (STA -> ODS -> DWH) to build the DataWarehouse
 - a Star Schema DataWarehouse for managing the transactional data
 - SQL Server Databases we used to maintain the DataWarehouse    
-- PowerBI dashboards to get insights from the transformed data located in the DataWarehouse
+- Interactive dashboards to get insights from the transformed data located in the DataWarehouse
      
          
 ## We worked as a team of 5 data engineers and data analysts, including:    
